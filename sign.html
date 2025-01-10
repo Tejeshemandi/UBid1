@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register Modal</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+
+<body>
+    <div class="modal">
+        <div class="modal-header">
+            <h2>ACCESS YOUR ACCOUNT</h2>
+        </div>
+        <div class="modal-content">
+            <!-- Login Form -->
+            <div class="login-form">
+                <h3>Login</h3>
+                <form>
+                    <label for="login-username">Username or email address *</label>
+                    <input type="text" id="login-username" placeholder="Enter username or email" required>
+
+                    <label for="login-password">Password *</label>
+                    <input type="password" id="login-password" placeholder="Enter password" required>
+
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+
+                    <button type="submit" class="btn login-btn">LOG IN</button>
+
+                    <a href="#" class="forgot-password">Lost your password?</a>
+                </form>
+            </div>
+
+            <!-- Register Form -->
+            <div class="register-form">
+                <h3>Register</h3>
+                <form>
+                    <label for="register-username">Username *</label>
+                    <input type="text" id="register-username" placeholder="Enter username" required>
+
+                    <label for="register-email">Email address *</label>
+                    <input type="email" id="register-email" placeholder="Enter email" required>
+
+                    <label for="register-password">Password *</label>
+                    <input type="password" id="register-password" placeholder="Enter password" required>
+
+                    <div class="user-type">
+                        <input type="radio" id="customer" name="user-type" value="customer" required>
+                        <label for="customer">I am a customer</label>
+
+                        <input type="radio" id="vendor" name="user-type" value="vendor">
+                        <label for="vendor">I am a vendor</label>
+                    </div>
+
+                    <button type="submit" class="btn register-btn">REGISTER</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
